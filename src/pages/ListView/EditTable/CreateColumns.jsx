@@ -87,6 +87,7 @@ placeholder="类型"
         { value: 'number', label: '数字' },
         { value: 'datePicker', label: '时间' },
         { value: 'upload', label: '上传' },
+        { value: 'boolean', label: '开关' },
       ]}
     />
               </Form.Item>

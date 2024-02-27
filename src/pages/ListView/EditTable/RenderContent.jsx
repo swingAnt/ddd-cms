@@ -93,8 +93,8 @@
 // export default RenderContent;
 
 
-import React, { useState, useEffect } from 'react';
-import { Input, DatePicker, InputNumber } from 'antd';
+import React, { useState, useEffect, } from 'react';
+import { Input, DatePicker, InputNumber ,Switch} from 'antd';
 import styles from './RenderContent.module.scss';
 import { getUuid } from '../../../utils';
 import Upload from './Upload'
@@ -217,6 +217,14 @@ const renderView = ({ id, key, type, value, updateList }) => {
       case 'upload':
       view =   <Upload />
       break;
+      case 'boolean':
+        view =  <Switch  value={value} onChange={(e) => {
+          updateList(id, key, e)
+        }}/>
+        break;
+        default:
+          break;
+
   }
   return view
 }

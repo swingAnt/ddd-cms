@@ -1,0 +1,34 @@
+.Box{
+    width: 100%;
+    height: 100%;
+    .Container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .left{
+            width: 20%;
+            height: 100%;
+            background: rgb(162 175 185 / 35%);
+            .layout{
+                display: flex;
+                gap: 5px;
+            
+                .title{
+                    font-weight: bold;
+                }
+            }
+            .theme{
+                display: flex;
+                gap: 5px;
+            
+                .title{
+                    font-weight: bold;
+                } 
+            }
+        }
+        .right{
+            width: 80%;
+            height: 100%; 
+        }
+    }
+}

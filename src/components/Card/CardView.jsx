@@ -39,12 +39,16 @@ export default function CardView(props) {
         <span className={styles.button}  onClick={()=>onAbilityQuality(r)} >
             查看
             </span>
-            <span className={styles.button} onClick={()=>onEdit(r,true)} >
+            <span className={styles.button} onClick={()=>props.onEdit(r,'edit')} >
             编辑
             </span>
-        <span className={styles.button}  onClick={()=>onDelete(r)}>
-            删除
+            <span className={styles.button} onClick={()=>props.onEdit(r,'design')} >
+            设计
             </span>
+
+        {/* <span className={styles.button}  onClick={()=>onDelete(r)}>
+            删除
+            </span> */}
           
         </div>}
     </div>

@@ -23,7 +23,7 @@ const initialItems = [
   },
 ];
 
-const App = () => {
+const App = (props) => {
   const [activeKey, setActiveKey] = useState(initialItems[0].key);
   const [items, setItems] = useState(initialItems);
   const newTabIndex = useRef(0);
@@ -68,6 +68,10 @@ const App = () => {
     }
   };
   return (
+    <div>
+        <div onClick={()=>{
+          props.onEditTable(null,null)
+        }}>返回</div>
     <Tabs
       type="editable-card"
       onChange={onChange}
@@ -87,6 +91,7 @@ const App = () => {
       style={{ height: 400 }}
 
     />
+   </div>
   );
 };
 export default App;

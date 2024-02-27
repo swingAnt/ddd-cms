@@ -1,0 +1,159 @@
+.DropBoard{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #c7c7c717;
+
+    .PaneBox{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    float: left;
+    .areaBox{
+        width: 100%;
+        height: 100%;
+    }
+    }
+    .layer{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 200;
+        top: 0;
+        left: 0;
+
+        & > div {
+            z-index: 2;
+        }
+
+        & > .position-part {
+            z-index: 1;
+        }
+        .position{
+            border: 2px solid #a7d5ff;
+            background: #c2ecff;
+            opacity: 0.5;
+            position: absolute;
+            z-index: 10000;
+    
+            &.top-part {
+                width: 100%;
+                height: 50%;
+                top: 0;
+                left: 0;
+            }
+    
+            &.right-part {
+                width: 50%;
+                height: 100%;
+                top: 0;
+                left: 50%;
+            }
+    
+            &.bottom-part {
+                width: 100%;
+                height: 50%;
+                top: 50%;
+                left: 0;
+            }
+    
+            &.left-part {
+                width: 50%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+    
+            &.center-part {
+                width: 40%;
+                height: 40%;
+                top: 30%;
+                left: 30%;
+            }
+        }
+
+    .mouse-top-part {
+        width: 40%;
+        height: 30%;
+        position: absolute;
+        top: 0;
+        left: 30%;
+        z-index: 1;
+    }
+
+    .mouse-right-part {
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 70%;
+        z-index: 1;
+    }
+
+    .mouse-bottom-part {
+        width: 40%;
+        height: 30%;
+        position: absolute;
+        top: 70%;
+        left: 30%;
+        z-index: 1;
+    }
+
+    .mouse-left-part {
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .mouse-center-part {
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        z-index: 1;
+
+        &.empty {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+    }
+  
+
+}
+.splitLine{
+    z-index: 999;
+    float: left;
+    background: #c7c7c7;
+    user-select: none;
+    width: 100%;
+    height: 2px;
+    margin: 1px 0;
+    cursor: row-resize;
+    opacity: 0.3;
+    position: relative;
+    &:hover {
+        background: #b5b1b1;
+        height: 4px;
+        margin: 0;
+    }
+
+    &.isVertical {
+        width: 2px;
+        height: 100%;
+        margin: 0 1px;
+        cursor: col-resize;
+
+        &:hover {
+            background: #b5b1b1;
+            width: 4px;
+            margin: 0;
+        }
+    }
+}

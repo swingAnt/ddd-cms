@@ -1176,7 +1176,7 @@
   "resolved" "http://registry.m.jd.com/@babel/regjsgen/download/@babel/regjsgen-0.8.0.tgz"
   "version" "0.8.0"
 
-"@babel/runtime@^7.10.1", "@babel/runtime@^7.10.4", "@babel/runtime@^7.11.1", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.16.7", "@babel/runtime@^7.18.0", "@babel/runtime@^7.18.3", "@babel/runtime@^7.18.6", "@babel/runtime@^7.20.0", "@babel/runtime@^7.20.7", "@babel/runtime@^7.21.0", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.10.1", "@babel/runtime@^7.10.4", "@babel/runtime@^7.11.1", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.3", "@babel/runtime@^7.16.7", "@babel/runtime@^7.18.0", "@babel/runtime@^7.18.3", "@babel/runtime@^7.20.0", "@babel/runtime@^7.20.7", "@babel/runtime@^7.21.0", "@babel/runtime@^7.22.5", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   "integrity" "sha1-hWTdWIGCzgBH1V16dek5IRB7V+w="
   "resolved" "http://registry.m.jd.com/@babel/runtime/download/@babel/runtime-7.22.5.tgz"
   "version" "7.22.5"
@@ -1811,6 +1811,21 @@
     "rc-resize-observer" "^1.3.1"
     "rc-util" "^5.33.0"
 
+"@react-dnd/asap@^5.0.1":
+  "integrity" "sha1-H4HxJMHNbzlRHBGogc+w9xU0NIg="
+  "resolved" "http://registry.m.jd.com/@react-dnd/asap/download/@react-dnd/asap-5.0.2.tgz"
+  "version" "5.0.2"
+
+"@react-dnd/invariant@^4.0.1":
+  "integrity" "sha1-uS7f/KEKJkZmQzSfrHzfuHmXad8="
+  "resolved" "http://registry.m.jd.com/@react-dnd/invariant/download/@react-dnd/invariant-4.0.2.tgz"
+  "version" "4.0.2"
+
+"@react-dnd/shallowequal@^4.0.1":
+  "integrity" "sha1-0bS++kI/aS+kq/HHkglwLn2K5LQ="
+  "resolved" "http://registry.m.jd.com/@react-dnd/shallowequal/download/@react-dnd/shallowequal-4.0.2.tgz"
+  "version" "4.0.2"
+
 "@remix-run/router@1.6.2":
   "integrity" "sha1-u+dfjFngtwd1hJIM4sx2+PNUk00="
   "resolved" "http://registry.m.jd.com/@remix-run/router/download/@remix-run/router-1.6.2.tgz"
@@ -2171,7 +2186,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/hoist-non-react-statics@^3.3.1":
+"@types/hoist-non-react-statics@^3.3.0", "@types/hoist-non-react-statics@^3.3.1", "@types/hoist-non-react-statics@>= 3.3.1":
   "integrity" "sha1-ESSq/lEYy1kZd66xzqrtEHDrA58="
   "resolved" "http://registry.m.jd.com/@types/hoist-non-react-statics/download/@types/hoist-non-react-statics-3.3.1.tgz"
   "version" "3.3.1"
@@ -2243,7 +2258,7 @@
   "resolved" "http://registry.m.jd.com/@types/mime/download/@types/mime-1.3.2.tgz"
   "version" "1.3.2"
 
-"@types/node@*":
+"@types/node@*", "@types/node@>= 12":
   "integrity" "sha1-JtKV81cDI7KDfTIhgN+/G6FW/vs="
   "resolved" "http://registry.m.jd.com/@types/node/download/@types/node-20.2.5.tgz"
   "version" "20.2.5"
@@ -2285,7 +2300,17 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.8 || ^17.0 || ^18.0":
+"@types/react-redux@^7.1.20":
+  "integrity" "sha1-U8VWTwPx3tkJBOPJD3fkvU3CCxU="
+  "resolved" "http://registry.m.jd.com/@types/react-redux/download/@types/react-redux-7.1.33.tgz"
+  "version" "7.1.33"
+  dependencies:
+    "@types/hoist-non-react-statics" "^3.3.0"
+    "@types/react" "*"
+    "hoist-non-react-statics" "^3.3.0"
+    "redux" "^4.0.0"
+
+"@types/react@*", "@types/react@^16.8 || ^17.0 || ^18.0", "@types/react@>= 16", "@types/react@>=16.8", "@types/react@>=17.0.0":
   "integrity" "sha1-kgf4Vxr9xZqcnDDfUOitJZHs768="
   "resolved" "http://registry.m.jd.com/@types/react/download/@types/react-18.2.9.tgz"
   "version" "18.2.9"
@@ -3643,6 +3668,13 @@
   "resolved" "http://registry.m.jd.com/cookie/download/cookie-0.5.0.tgz"
   "version" "0.5.0"
 
+"copy-anything@^2.0.1":
+  "integrity" "sha1-CSRU6pWEp7etVXMGKyqH9ZAPxIA="
+  "resolved" "http://registry.m.jd.com/copy-anything/download/copy-anything-2.0.6.tgz"
+  "version" "2.0.6"
+  dependencies:
+    "is-what" "^3.14.1"
+
 "copy-to-clipboard@^3.2.0":
   "integrity" "sha1-VaxDoduK5jmkvZlRHBSM3RuDobA="
   "resolved" "http://registry.m.jd.com/copy-to-clipboard/download/copy-to-clipboard-3.3.3.tgz"
@@ -3726,6 +3758,13 @@
   "version" "3.0.3"
   dependencies:
     "postcss-selector-parser" "^6.0.9"
+
+"css-box-model@^1.2.0":
+  "integrity" "sha1-WZUdO4H9ayB0pi1JREQVsNK018E="
+  "resolved" "http://registry.m.jd.com/css-box-model/download/css-box-model-1.2.1.tgz"
+  "version" "1.2.1"
+  dependencies:
+    "tiny-invariant" "^1.0.6"
 
 "css-declaration-sorter@^6.3.1":
   "integrity" "sha1-YwYYrcIXJEhLPpUFvOgS3vRAAK0="
@@ -4048,6 +4087,11 @@
   "resolved" "http://registry.m.jd.com/depd/download/depd-2.0.0.tgz"
   "version" "2.0.0"
 
+"derive-valtio@0.1.0":
+  "integrity" "sha1-S5+zk9/vzP7xX8u93XRd0i1dY9c="
+  "resolved" "http://registry.m.jd.com/derive-valtio/download/derive-valtio-0.1.0.tgz"
+  "version" "0.1.0"
+
 "destroy@1.2.0":
   "integrity" "sha1-SANzVQmti+VSk0xn32FPlOZvoBU="
   "resolved" "http://registry.m.jd.com/destroy/download/destroy-1.2.0.tgz"
@@ -4097,6 +4141,15 @@
   "integrity" "sha1-XBmKihFFNZbnUUlNSYdLx3MvLnk="
   "resolved" "http://registry.m.jd.com/dlv/download/dlv-1.1.3.tgz"
   "version" "1.1.3"
+
+"dnd-core@^16.0.1":
+  "integrity" "sha1-ocIT7QiWH2vRlZoou3bxqGg2DRk="
+  "resolved" "http://registry.m.jd.com/dnd-core/download/dnd-core-16.0.1.tgz"
+  "version" "16.0.1"
+  dependencies:
+    "@react-dnd/asap" "^5.0.1"
+    "@react-dnd/invariant" "^4.0.1"
+    "redux" "^4.2.0"
 
 "dns-equal@^1.0.0":
   "integrity" "sha1-s55/HabrCnW6nBcySzR1PEfgZU0="
@@ -4242,6 +4295,14 @@
   "resolved" "http://registry.m.jd.com/duplexer/download/duplexer-0.1.2.tgz"
   "version" "0.1.2"
 
+"echarts@^5.4.3":
+  "integrity" "sha1-wTlFp/Os3WfBNNiprGfpF4MBE6w="
+  "resolved" "http://registry.m.jd.com/echarts/download/echarts-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "tslib" "2.3.0"
+    "zrender" "5.5.0"
+
 "ee-first@1.1.1":
   "integrity" "sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0="
   "resolved" "http://registry.m.jd.com/ee-first/download/ee-first-1.1.1.tgz"
@@ -4301,6 +4362,13 @@
   "integrity" "sha1-CY3JDruD2N/6CJ1VJWs1HTTE2lU="
   "resolved" "http://registry.m.jd.com/entities/download/entities-2.2.0.tgz"
   "version" "2.2.0"
+
+"errno@^0.1.1":
+  "integrity" "sha1-i7Ppx9Rjvkl2/4iPdrSAnrwugR8="
+  "resolved" "http://registry.m.jd.com/errno/download/errno-0.1.8.tgz"
+  "version" "0.1.8"
+  dependencies:
+    "prr" "~1.0.1"
 
 "error-ex@^1.3.1":
   "integrity" "sha1-tKxAZIEH/c3PriQvQovqihTU8b8="
@@ -5481,7 +5549,12 @@
   "resolved" "http://registry.m.jd.com/ignore/download/ignore-5.2.4.tgz"
   "version" "5.2.4"
 
-"immer@^9.0.7":
+"image-size@~0.5.0":
+  "integrity" "sha1-Cd/Uq50g4p6xw+gLiZA3jfnjy5w="
+  "resolved" "http://registry.m.jd.com/image-size/download/image-size-0.5.5.tgz"
+  "version" "0.5.5"
+
+"immer@*", "immer@^9.0.7":
   "integrity" "sha1-HgJeoxpA8k+wZPH+8j6TFJYzAXY="
   "resolved" "http://registry.m.jd.com/immer/download/immer-9.0.21.tgz"
   "version" "9.0.21"
@@ -5785,6 +5858,11 @@
   dependencies:
     "call-bind" "^1.0.2"
     "get-intrinsic" "^1.1.1"
+
+"is-what@^3.14.1":
+  "integrity" "sha1-4SIvRt3ahd6tD9HJ3xMXYOd3VcE="
+  "resolved" "http://registry.m.jd.com/is-what/download/is-what-3.14.1.tgz"
+  "version" "3.14.1"
 
 "is-wsl@^2.2.0":
   "integrity" "sha1-dKTHbnfKn9P5MvKQwX6jJs0VcnE="
@@ -6399,6 +6477,16 @@
   "resolved" "http://registry.m.jd.com/jiti/download/jiti-1.18.2.tgz"
   "version" "1.18.2"
 
+"jotai-immer@^0.2.0":
+  "integrity" "sha1-m/oaWnkRxbIi0iqDiKgBwFvAbGU="
+  "resolved" "http://registry.m.jd.com/jotai-immer/download/jotai-immer-0.2.0.tgz"
+  "version" "0.2.0"
+
+"jotai@^2.1.0", "jotai@>=1.11.0":
+  "integrity" "sha1-pop28OXNK2FK+ucRLPxSp32/4Dg="
+  "resolved" "http://registry.m.jd.com/jotai/download/jotai-2.6.4.tgz"
+  "version" "2.6.4"
+
 "js-cookie@^2.x.x":
   "integrity" "sha1-aeEG3F1YBolFYpAqpbrsN0Tpsrg="
   "resolved" "http://registry.m.jd.com/js-cookie/download/js-cookie-2.2.1.tgz"
@@ -6568,6 +6656,28 @@
     "picocolors" "^1.0.0"
     "shell-quote" "^1.7.3"
 
+"less-loader@^11.1.3":
+  "integrity" "sha1-6KBwhE76775ZuXisr1e50+hozwg="
+  "resolved" "http://registry.m.jd.com/less-loader/download/less-loader-11.1.4.tgz"
+  "version" "11.1.4"
+
+"less@^3.5.0 || ^4.0.0":
+  "integrity" "sha1-y++/qhSkzTiOIJmytR+VbhRlxFA="
+  "resolved" "http://registry.m.jd.com/less/download/less-4.2.0.tgz"
+  "version" "4.2.0"
+  dependencies:
+    "copy-anything" "^2.0.1"
+    "parse-node-version" "^1.0.1"
+    "tslib" "^2.3.0"
+  optionalDependencies:
+    "errno" "^0.1.1"
+    "graceful-fs" "^4.1.2"
+    "image-size" "~0.5.0"
+    "make-dir" "^2.1.0"
+    "mime" "^1.4.1"
+    "needle" "^3.1.0"
+    "source-map" "~0.6.0"
+
 "leven@^3.1.0":
   "integrity" "sha1-d4kd6DQGTMy6gq54QrtrFKE+1/I="
   "resolved" "http://registry.m.jd.com/leven/download/leven-3.1.0.tgz"
@@ -6720,6 +6830,14 @@
   dependencies:
     "sourcemap-codec" "^1.4.8"
 
+"make-dir@^2.1.0":
+  "integrity" "sha1-XwMQ4YuL6JjMBwCSlaMK5B6R5vU="
+  "resolved" "http://registry.m.jd.com/make-dir/download/make-dir-2.1.0.tgz"
+  "version" "2.1.0"
+  dependencies:
+    "pify" "^4.0.1"
+    "semver" "^5.6.0"
+
 "make-dir@^3.0.0", "make-dir@^3.0.2", "make-dir@^3.1.0":
   "integrity" "sha1-QV6WcEazp/HRhSd9hKpYIDcmoT8="
   "resolved" "http://registry.m.jd.com/make-dir/download/make-dir-3.1.0.tgz"
@@ -6755,6 +6873,11 @@
   "version" "3.5.1"
   dependencies:
     "fs-monkey" "^1.0.3"
+
+"memoize-one@^5.1.1":
+  "integrity" "sha1-gzeqPEM1WBg57AHD1ZQJDOvo8A4="
+  "resolved" "http://registry.m.jd.com/memoize-one/download/memoize-one-5.2.1.tgz"
+  "version" "5.2.1"
 
 "merge-descriptors@1.0.1":
   "integrity" "sha1-sAqqVW3YtEVoFQ7J0blT8/kMu2E="
@@ -6796,7 +6919,7 @@
   dependencies:
     "mime-db" "1.52.0"
 
-"mime@1.6.0":
+"mime@^1.4.1", "mime@1.6.0":
   "integrity" "sha1-Ms2eXGRVO9WNGaVor0Uqz/BJgbE="
   "resolved" "http://registry.m.jd.com/mime/download/mime-1.6.0.tgz"
   "version" "1.6.0"
@@ -6902,6 +7025,14 @@
   "integrity" "sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc="
   "resolved" "http://registry.m.jd.com/natural-compare/download/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
+
+"needle@^3.1.0":
+  "integrity" "sha1-Y/da7FgMLnfiCfPzJOLN89Kb0Ek="
+  "resolved" "http://registry.m.jd.com/needle/download/needle-3.3.1.tgz"
+  "version" "3.3.1"
+  dependencies:
+    "iconv-lite" "^0.6.3"
+    "sax" "^1.2.4"
 
 "negotiator@0.6.3":
   "integrity" "sha1-WOMjpy/twNb5zU0x/kn1FHlZDM0="
@@ -7206,6 +7337,11 @@
     "json-parse-even-better-errors" "^2.3.0"
     "lines-and-columns" "^1.1.6"
 
+"parse-node-version@^1.0.1":
+  "integrity" "sha1-4rXb7eAOf6m8NjYH9TMn6LBzGJs="
+  "resolved" "http://registry.m.jd.com/parse-node-version/download/parse-node-version-1.0.1.tgz"
+  "version" "1.0.1"
+
 "parse5@6.0.1":
   "integrity" "sha1-4aHAhcVps9wIMhGE8Zo5zCf3wws="
   "resolved" "http://registry.m.jd.com/parse5/download/parse5-6.0.1.tgz"
@@ -7283,6 +7419,11 @@
   "integrity" "sha1-7RQaasBDqEnqWISY59yosVMw6Qw="
   "resolved" "http://registry.m.jd.com/pify/download/pify-2.3.0.tgz"
   "version" "2.3.0"
+
+"pify@^4.0.1":
+  "integrity" "sha1-SyzSXFDVmHNcUCkiJP2MbfQeMjE="
+  "resolved" "http://registry.m.jd.com/pify/download/pify-4.0.1.tgz"
+  "version" "4.0.1"
 
 "pirates@^4.0.1", "pirates@^4.0.4":
   "integrity" "sha1-/uw1LqXDJo+yOjfHAqsWmfNaXzs="
@@ -7934,7 +8075,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@^15.8.1", "prop-types@15.x":
+"prop-types@^15.7.2", "prop-types@^15.8.1", "prop-types@15.x":
   "integrity" "sha1-Z9h78aaU9IQ1zzMsJK8QIUoxQLU="
   "resolved" "http://registry.m.jd.com/prop-types/download/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -7951,10 +8092,20 @@
     "forwarded" "0.2.0"
     "ipaddr.js" "1.9.1"
 
+"proxy-compare@2.5.1":
+  "integrity" "sha1-F4GOM9FlP7rIwuwxQGvOiilm9gA="
+  "resolved" "http://registry.m.jd.com/proxy-compare/download/proxy-compare-2.5.1.tgz"
+  "version" "2.5.1"
+
 "proxy-from-env@^1.1.0":
   "integrity" "sha1-4QLxbKNVQkhldV0sno6k8k1Yw+I="
   "resolved" "http://registry.m.jd.com/proxy-from-env/download/proxy-from-env-1.1.0.tgz"
   "version" "1.1.0"
+
+"prr@~1.0.1":
+  "integrity" "sha1-0/wRS6BplaRexok/SEzrHXj19HY="
+  "resolved" "http://registry.m.jd.com/prr/download/prr-1.0.1.tgz"
+  "version" "1.0.1"
 
 "psl@^1.1.33":
   "integrity" "sha1-0N8qE38AeUVl/K87LADNCfjVpac="
@@ -7983,6 +8134,13 @@
   dependencies:
     "side-channel" "^1.0.4"
 
+"quarkc@^1.0.39":
+  "integrity" "sha1-5lqt09g79oXJyvqRX92fjJx44P0="
+  "resolved" "http://registry.m.jd.com/quarkc/download/quarkc-1.0.39.tgz"
+  "version" "1.0.39"
+  dependencies:
+    "@babel/runtime" "^7.22.5"
+
 "querystringify@^2.1.1":
   "integrity" "sha1-M0WUG0FTy50ILY7uTNogFqmu9/Y="
   "resolved" "http://registry.m.jd.com/querystringify/download/querystringify-2.2.0.tgz"
@@ -7992,6 +8150,11 @@
   "integrity" "sha1-SSkii7xyTfrEPg77BYyve2z7YkM="
   "resolved" "http://registry.m.jd.com/queue-microtask/download/queue-microtask-1.2.3.tgz"
   "version" "1.2.3"
+
+"raf-schd@^4.0.2":
+  "integrity" "sha1-XWw070b4sqDogKj823Q+/Fv9vBo="
+  "resolved" "http://registry.m.jd.com/raf-schd/download/raf-schd-4.0.3.tgz"
+  "version" "4.0.3"
 
 "raf@^3.4.1":
   "integrity" "sha1-B0LpmkplUvRF1z4+4DKK8P8e3jk="
@@ -8399,6 +8562,19 @@
   dependencies:
     "semver" "^5.6.0"
 
+"react-beautiful-dnd@^13.1.1":
+  "integrity" "sha1-sPMIelhAkgq/i7IyXx/6RtjE0KI="
+  "resolved" "http://registry.m.jd.com/react-beautiful-dnd/download/react-beautiful-dnd-13.1.1.tgz"
+  "version" "13.1.1"
+  dependencies:
+    "@babel/runtime" "^7.9.2"
+    "css-box-model" "^1.2.0"
+    "memoize-one" "^5.1.1"
+    "raf-schd" "^4.0.2"
+    "react-redux" "^7.2.0"
+    "redux" "^4.0.4"
+    "use-memo-one" "^1.1.1"
+
 "react-dev-utils@^12.0.1":
   "integrity" "sha1-upLttKHzeb1GzNa81Oe8OY3zPnM="
   "resolved" "http://registry.m.jd.com/react-dev-utils/download/react-dev-utils-12.0.1.tgz"
@@ -8429,7 +8605,25 @@
     "strip-ansi" "^6.0.1"
     "text-table" "^0.2.0"
 
-"react-dom@*", "react-dom@^16.8 || ^17.0 || ^18.0", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>= 16.3.0", "react-dom@>=16.0.0", "react-dom@>=16.11.0", "react-dom@>=16.8", "react-dom@>=16.9.0":
+"react-dnd-html5-backend@^16.0.1":
+  "integrity" "sha1-h/rvFYRdUSojs8CNKez9NIcWiLY="
+  "resolved" "http://registry.m.jd.com/react-dnd-html5-backend/download/react-dnd-html5-backend-16.0.1.tgz"
+  "version" "16.0.1"
+  dependencies:
+    "dnd-core" "^16.0.1"
+
+"react-dnd@^16.0.1":
+  "integrity" "sha1-JEKj7GeJLGDUChVZ7vRUmLom+jc="
+  "resolved" "http://registry.m.jd.com/react-dnd/download/react-dnd-16.0.1.tgz"
+  "version" "16.0.1"
+  dependencies:
+    "@react-dnd/invariant" "^4.0.1"
+    "@react-dnd/shallowequal" "^4.0.1"
+    "dnd-core" "^16.0.1"
+    "fast-deep-equal" "^3.1.3"
+    "hoist-non-react-statics" "^3.3.2"
+
+"react-dom@*", "react-dom@^16.8 || ^17.0 || ^18.0", "react-dom@^16.8.5 || ^17.0.0 || ^18.0.0", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>= 16.3.0", "react-dom@>=16.0.0", "react-dom@>=16.11.0", "react-dom@>=16.8", "react-dom@>=16.9.0":
   "integrity" "sha1-IqrzhwjbJnTtmtoiTKSqcI2CHj0="
   "resolved" "http://registry.m.jd.com/react-dom/download/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -8471,10 +8665,27 @@
   "resolved" "http://registry.m.jd.com/react-is/download/react-is-17.0.2.tgz"
   "version" "17.0.2"
 
+"react-is@^17.0.2":
+  "integrity" "sha1-5pHUqOnHiTZWVVOas3J2Kw77VPA="
+  "resolved" "http://registry.m.jd.com/react-is/download/react-is-17.0.2.tgz"
+  "version" "17.0.2"
+
 "react-is@^18.0.0":
   "integrity" "sha1-GZQx7qqi4J+GQn77tPFHPttHYJs="
   "resolved" "http://registry.m.jd.com/react-is/download/react-is-18.2.0.tgz"
   "version" "18.2.0"
+
+"react-redux@^7.2.0":
+  "integrity" "sha1-CUiPu5QWpO/jc1tyNQVUQrBCSB0="
+  "resolved" "http://registry.m.jd.com/react-redux/download/react-redux-7.2.9.tgz"
+  "version" "7.2.9"
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "@types/react-redux" "^7.1.20"
+    "hoist-non-react-statics" "^3.3.2"
+    "loose-envify" "^1.4.0"
+    "prop-types" "^15.7.2"
+    "react-is" "^17.0.2"
 
 "react-redux@^8.0.7":
   "integrity" "sha1-t07y984gduNUVAqjUR02cMK2JXE="
@@ -8571,7 +8782,7 @@
   optionalDependencies:
     "fsevents" "^2.3.2"
 
-"react@*", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>= 16.3", "react@>= 16.3.0", "react@>=16.0.0", "react@>=16.11.0", "react@>=16.8", "react@>=16.9.0":
+"react@*", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.3 || ^17 || ^18", "react@^16.8.5 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>= 16.14", "react@>= 16.3", "react@>= 16.3.0", "react@>=16.0.0", "react@>=16.11.0", "react@>=16.8", "react@>=16.9.0", "react@>=17.0.0":
   "integrity" "sha1-VVvZhZKIMlX6AN4U8RUakXtdd9U="
   "resolved" "http://registry.m.jd.com/react/download/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -8639,7 +8850,7 @@
   "resolved" "http://registry.m.jd.com/redux-thunk/download/redux-thunk-2.4.2.tgz"
   "version" "2.4.2"
 
-"redux@^3.1.0 || ^4.0.0", "redux@^4", "redux@^4 || ^5.0.0-beta.0", "redux@^4.2.1":
+"redux@^3.1.0 || ^4.0.0", "redux@^4", "redux@^4 || ^5.0.0-beta.0", "redux@^4.0.0", "redux@^4.0.4", "redux@^4.2.0", "redux@^4.2.1":
   "integrity" "sha1-wI9DBoJsSbXp3JAd7gRS6o/OYZc="
   "resolved" "http://registry.m.jd.com/redux/download/redux-4.2.1.tgz"
   "version" "4.2.1"
@@ -8892,7 +9103,7 @@
     "immutable" "^4.0.0"
     "source-map-js" ">=0.6.2 <2.0.0"
 
-"sax@~1.2.4":
+"sax@^1.2.4", "sax@~1.2.4":
   "integrity" "sha1-KBYjTiN4vdxOU1T6tcqold9xANk="
   "resolved" "http://registry.m.jd.com/sax/download/sax-1.2.4.tgz"
   "version" "1.2.4"
@@ -8991,9 +9202,9 @@
     "node-forge" "^1"
 
 "semver@^5.6.0":
-  "integrity" "sha1-qVT5Ma66UI0we78Gnv8MAclhFvc="
-  "resolved" "http://registry.m.jd.com/semver/download/semver-5.7.1.tgz"
-  "version" "5.7.1"
+  "integrity" "sha1-SNVdtzfDKHzUg14X+hP+rOHEHvg="
+  "resolved" "http://registry.m.jd.com/semver/download/semver-5.7.2.tgz"
+  "version" "5.7.2"
 
 "semver@^6.0.0", "semver@^6.1.1", "semver@^6.1.2", "semver@^6.3.0":
   "integrity" "sha1-7gpkyK9ejO6mdoexM3YeG+y9HT0="
@@ -9638,6 +9849,11 @@
   "resolved" "http://registry.m.jd.com/thunky/download/thunky-1.1.0.tgz"
   "version" "1.1.0"
 
+"tiny-invariant@^1.0.6":
+  "integrity" "sha1-RmgLeoc6DV0QAFmV65CnDXTWASc="
+  "resolved" "http://registry.m.jd.com/tiny-invariant/download/tiny-invariant-1.3.3.tgz"
+  "version" "1.3.3"
+
 "tmpl@1.0.5":
   "integrity" "sha1-hoPguQK7nCDE9ybjwLafNlGMB8w="
   "resolved" "http://registry.m.jd.com/tmpl/download/tmpl-1.0.5.tgz"
@@ -9714,10 +9930,15 @@
   "resolved" "http://registry.m.jd.com/tslib/download/tslib-1.14.1.tgz"
   "version" "1.14.1"
 
-"tslib@^2.0.3", "tslib@^2.4.1":
+"tslib@^2.0.3", "tslib@^2.3.0", "tslib@^2.4.1":
   "integrity" "sha1-JJRLotmQlA5umCxL6hR6uoAgmRM="
   "resolved" "http://registry.m.jd.com/tslib/download/tslib-2.5.3.tgz"
   "version" "2.5.3"
+
+"tslib@2.3.0":
+  "integrity" "sha1-gDuM2rPhK6WBpMpByIObuw2ssJ4="
+  "resolved" "http://registry.m.jd.com/tslib/download/tslib-2.3.0.tgz"
+  "version" "2.3.0"
 
 "tsutils@^3.21.0":
   "integrity" "sha1-tIcX05TOpsHglpg+7Vjp1hcVtiM="
@@ -9884,7 +10105,12 @@
     "querystringify" "^2.1.1"
     "requires-port" "^1.0.0"
 
-"use-sync-external-store@^1.0.0":
+"use-memo-one@^1.1.1":
+  "integrity" "sha1-L9LkOiFp6rx0lpYKzox57++XXpk="
+  "resolved" "http://registry.m.jd.com/use-memo-one/download/use-memo-one-1.1.3.tgz"
+  "version" "1.1.3"
+
+"use-sync-external-store@^1.0.0", "use-sync-external-store@1.2.0":
   "integrity" "sha1-fb79bvP+TnZ6DPXXKHqs+1hGkoo="
   "resolved" "http://registry.m.jd.com/use-sync-external-store/download/use-sync-external-store-1.2.0.tgz"
   "version" "1.2.0"
@@ -9927,6 +10153,15 @@
     "@types/istanbul-lib-coverage" "^2.0.1"
     "convert-source-map" "^1.6.0"
     "source-map" "^0.7.3"
+
+"valtio@*", "valtio@^1.11.2":
+  "integrity" "sha1-buYmKbZYvIinJwOBfk6xgns9h1Q="
+  "resolved" "http://registry.m.jd.com/valtio/download/valtio-1.13.0.tgz"
+  "version" "1.13.0"
+  dependencies:
+    "derive-valtio" "0.1.0"
+    "proxy-compare" "2.5.1"
+    "use-sync-external-store" "1.2.0"
 
 "vary@~1.1.2":
   "integrity" "sha1-IpnwLG3tMNSllhsLn3RSShj2NPw="
@@ -10399,21 +10634,6 @@
   "resolved" "http://registry.m.jd.com/ws/download/ws-8.13.0.tgz"
   "version" "8.13.0"
 
-"wujie-react@^1.0.0-rc.25":
-  "integrity" "sha1-4Bb/Ean+9AtmjNhzYZpm0VpF9oM="
-  "resolved" "http://registry.m.jd.com/wujie-react/download/wujie-react-1.0.18.tgz"
-  "version" "1.0.18"
-  dependencies:
-    "prop-types" "^15.8.1"
-    "wujie" "1.0.18"
-
-"wujie@1.0.18":
-  "integrity" "sha1-seRfLI7O+EKwqXjtJQK3RIfopKk="
-  "resolved" "http://registry.m.jd.com/wujie/download/wujie-1.0.18.tgz"
-  "version" "1.0.18"
-  dependencies:
-    "@babel/runtime" "^7.18.6"
-
 "xml-name-validator@^3.0.0":
   "integrity" "sha1-auc+Bt5NjG5H+fsYH3jWSK1FfGo="
   "resolved" "http://registry.m.jd.com/xml-name-validator/download/xml-name-validator-3.0.0.tgz"
@@ -10471,3 +10691,10 @@
   "integrity" "sha1-ApTrPe4FAo0x7hpfosVWpqrxChs="
   "resolved" "http://registry.m.jd.com/yocto-queue/download/yocto-queue-0.1.0.tgz"
   "version" "0.1.0"
+
+"zrender@5.5.0":
+  "integrity" "sha1-VNDWxO2oGpbZ9gqc103EjqAmvB4="
+  "resolved" "http://registry.m.jd.com/zrender/download/zrender-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "tslib" "2.3.0"

@@ -8,6 +8,7 @@ import Card from '@/components/Card'
 import Seach from '@/components/Seach'
 import {getUserInfo} from '@/api/index.jsx'
 import Create from './CreateProject'
+import Board from './Board'
 
 import EditTable from './EditTable'
 
@@ -36,10 +37,10 @@ export default function ListView(props) {
   const [view, setView] = useState('1');
   const [list, setList] = useState([]);
   const [open, setOpen] = useState(false);
-  const [editTableVisible, setEditTableVisible] = useState(false);
+  const [editTableVisible, setEditTableVisible] = useState(null);
   const [edit, setEdit] = useState(null);
-  const onEditTable = (item,visible) => {
-    setEditTableVisible(visible)
+  const onEditTable = (item,type) => {
+    setEditTableVisible(type)
     setEdit(item)
   }
 
@@ -50,8 +51,10 @@ export default function ListView(props) {
            
     })
 
-    return editTableVisible?
+    return editTableVisible==='edit'?
     <EditTable onEditTable={onEditTable}/>
+    :editTableVisible==='design'?
+    <Board  onEditTable={onEditTable}/>
     :<div className={styles.Container}>
         <Seach />
           <div className={styles.changeView}>

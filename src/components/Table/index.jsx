@@ -29,7 +29,8 @@ const getColumns=(props)=>{
     { title: '操作', dataIndex: 'action', key: 'action',
     render:(r,row) => {
       return <div className={styles.buttonGroup}>
-                <a onClick={()=>props.onEdit(row,true)}>编辑</a>
+                <a onClick={()=>props.onEdit(row,'edit')}>编辑</a>
+                <a onClick={()=>props.onEdit(row,'design')}>设计</a>
         <a>删除</a>
       </div>
     } },
