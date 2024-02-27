@@ -3,11 +3,7 @@ import { Route } from "react-router-dom";
 import { lazy } from 'react'
 const ErrorPage = lazy(() => import('@/pages/ErrorPage/index.tsx'))
 const ListView = lazy(() => import('@/pages/ListView'))
-const Form = lazy(() => import('@/components/Form'))
-const Tour = lazy(() => import('@/components/Tour'))
-const LayoutFree = lazy(() => import('@/components/LayoutFree'))
 const Home = lazy(() => import('@/containers'))
-const QAPage = lazy(() => import('@/pages/QAPage'))
 
 // import ErrorPage from "@/pages/ErrorPage/index.tsx";
 // import ListView from "@/pages/ListView";
@@ -18,20 +14,14 @@ const QAPage = lazy(() => import('@/pages/QAPage'))
 // import Home from "@/containers/index";
 
 const routerData= [
-    {
-        id: "/",
-        path: "/",
-        element: <LayoutFree />,
-        desc: '首页布局',
-        authority: "",
-    },
-    {
-        id: "/ai",
-        path: "/ai",
-        element: <QAPage />,
-        desc: 'chartGpt',
-        authority: "",
-    },
+    // {
+    //     id: "/",
+    //     path: "/",
+    //     element: <LayoutFree />,
+    //     desc: '首页布局',
+    //     authority: "",
+    // },
+  
     {
         id: "/home/manage/table",
         path: "/home/manage/table",
@@ -39,20 +29,7 @@ const routerData= [
         desc: '列表',
         authority: "",
     },
-    
-{
-    id: "/home/manage/form",
-    path: "/home/manage/form",
-    element: <Form />,
-    desc: '表单',
-    authority: "",
-},{
-    id: "/home/manage/tour",
-    path: "/home/manage/tour",
-    element: <Tour />,
-    desc: '向导',
-    authority: "",
-},
+   
 
 {
     id: "*",

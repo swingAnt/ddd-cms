@@ -37,6 +37,7 @@ export default function Seach (props) {
                 > <Space><Button shape="round" onClick={() => onFinish()} type='primary'>查询</Button>
                         <Button shape="round" onClick={() => onReset()}>重置</Button></Space></Form.Item>
             </Col>
+        
         </Row>
     </Form>
 }

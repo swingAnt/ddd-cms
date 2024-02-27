@@ -1,0 +1,33 @@
+.upIcon{
+    margin-right: 50px;
+    color: #0082fad1;
+    cursor: pointer;
+}
+.fileList{
+    .icon{
+        color: #0082fad1;
+        cursor: pointer;
+    }
+    .font{
+        color: #0082fad1;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+
+}
+.fileName{
+    cursor: pointer;
+}
+.down{
+    margin-left: 9px;
+}
+:global{
+    .ant-upload.ant-upload-drag {
+        background: #ffffff;
+        border: 0px;
+    }
+    .ant-upload.ant-upload-drag .ant-upload {
+        padding: 0px;
+    }
+}
+

@@ -1,0 +1,52 @@
+.gridTable {
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+
+}
+.gridTableButtons{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: blue;
+    font-weight: 600;
+    .addRow{
+        cursor: pointer;
+
+    }
+    .addCol{
+        cursor: pointer;
+
+        
+    }
+}
+.item {
+    border: 1px solid #e8e8e8; /* 使用 Ant Design 中的边框颜色 */
+    margin: 0px -1px -1px 0px;
+    min-height: 30px;
+    display: grid;
+    place-items:center center;
+    padding:10px 5px;
+
+}
+.header{
+    border: 1px solid #e8e8e8; /* 使用 Ant Design 中的边框颜色 */
+    background: aliceblue;
+    margin: 0px -1px -1px 0px;
+    min-height: 30px;
+   display: grid;
+   place-items:center center;
+
+}
+.draw{
+    position: relative;
+    height: 100%;
+    .drawFooter{
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        button{
+            margin-left: 10px;
+        }
+    
+    }
+}

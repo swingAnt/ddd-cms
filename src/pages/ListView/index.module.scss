@@ -1,0 +1,14 @@
+.Container{
+   
+}
+.changeView {
+    display: flex;
+    width: 100%;
+    position: relative;   
+    align-items: center;     
+    .create{
+        position: absolute;
+        right: 0;
+    }
+
+}

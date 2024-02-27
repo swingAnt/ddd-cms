@@ -19,14 +19,22 @@ const getImg=(type)=>{
   }
   return img
 }
-const columns= [
-  { title: 'Name', dataIndex: 'name', key: 'name',
-  render:(r,row) => {
-    return <div>{getImg(row.type)}{r}</div>
-  } },
-  { title: 'Age', dataIndex: 'age', key: 'age' },
-  { title: 'Address', dataIndex: 'address', key: 'address' },
-];
+const getColumns=(props)=>{
+  return [
+    { title: 'name', dataIndex: 'name', key: 'name',
+    render:(r,row) => {
+      return <div>{getImg(row.type)}{r}</div>
+    } },
+    { title: 'description', dataIndex: 'description', key: 'description' },
+    { title: '操作', dataIndex: 'action', key: 'action',
+    render:(r,row) => {
+      return <div className={styles.buttonGroup}>
+                <a onClick={()=>props.onEdit(row,true)}>编辑</a>
+        <a>删除</a>
+      </div>
+    } },
+  ];
+} 
 
 
 
@@ -34,7 +42,7 @@ const App = (props) => (
   <>
   <div className={styles.driver}></div>
   <Table
-    columns={columns}
+    columns={getColumns(props)}
     rowSelection={{}}
     dataSource={props.list}
     pagination={false}

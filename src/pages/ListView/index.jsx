@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './index.less'
+import styles from './index.module.scss'
 import { Button } from 'antd';
 import { useMount } from 'ahooks';
 import { DatabaseTwoTone, AppstoreTwoTone } from '@ant-design/icons';
@@ -7,44 +7,41 @@ import Table from '@/components/Table'
 import Card from '@/components/Card'
 import Seach from '@/components/Seach'
 import {getUserInfo} from '@/api/index.jsx'
+import Create from './CreateProject'
 
+import EditTable from './EditTable'
 
 const data = [
-    {
-      key: 1,
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park',
-      description: 'My name is John Brown, I am 32 years old, living in New York No. 1 Lake Park.',
-    },
-    {
-      key: 2,
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park',
-      description: 'My name is Jim Green, I am 42 years old, living in London No. 1 Lake Park.',
-    },
+    // {
+    //   key: 2,
+    //   name: 'Jim Green',
+    //   age: 42,
+    //   address: 'London No. 1 Lake Park',
+    //   description: 'My name is Jim Green, I am 42 years old, living in London No. 1 Lake Park.',
+    // },
     {
       key: 3,
       name: 'Not Expandable',
-      age: 29,
-      address: 'Jiangsu No. 1 Lake Park',
       description: 'This not expandable',
       type:"1"
     },
     {
       key: 4,
       name: 'Joe Black',
-      age: 32,
       type:"2",
-      address: 'Sydney No. 1 Lake Park',
       description: 'My name is Joe Black, I am 32 years old, living in Sydney No. 1 Lake Park.',
     },
   ];
 export default function ListView(props) {
   const [view, setView] = useState('1');
   const [list, setList] = useState([]);
-  console.log('ListView')
+  const [open, setOpen] = useState(false);
+  const [editTableVisible, setEditTableVisible] = useState(false);
+  const [edit, setEdit] = useState(null);
+  const onEditTable = (item,visible) => {
+    setEditTableVisible(visible)
+    setEdit(item)
+  }
 
   useMount(() => {
          getUserInfo().then(user=>{
@@ -53,7 +50,9 @@ export default function ListView(props) {
            
     })
 
-    return <div className={styles.Container}>
+    return editTableVisible?
+    <EditTable onEditTable={onEditTable}/>
+    :<div className={styles.Container}>
         <Seach />
           <div className={styles.changeView}>
                 <Button size='small' type={view === '1' ? 'primary' : "default"} className={styles.button} icon={<AppstoreTwoTone />} onClick={() => {
@@ -62,10 +61,11 @@ export default function ListView(props) {
                 <Button size='small' type={view === '2' ? 'primary' : "default"} className={styles.button} icon={<DatabaseTwoTone />} onClick={() => {
                     setView('2')
                 }}>列表</Button>
+                <div className={styles.create} ><Create list={list} updateList={setList}/></div>
             </div>
             {view === '1' ?
-                <Card list={list}/>
-                : <Table list={list} />
+                <Card list={list} onEdit={onEditTable}/>
+                : <Table list={list} onEdit={onEditTable}/>
             }  
     </div>
 }
