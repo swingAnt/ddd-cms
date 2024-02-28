@@ -22,15 +22,15 @@ const data = [
     // },
     {
       key: 3,
-      name: 'Not Expandable',
-      description: 'This not expandable',
+      name: '房产系统',
+      description: 'This is house project',
       type:"1"
     },
     {
       key: 4,
-      name: 'Joe Black',
+      name: '财务系统',
       type:"2",
-      description: 'My name is Joe Black, I am 32 years old, living in Sydney No. 1 Lake Park.',
+      description: 'This is money counting project',
     },
   ];
 export default function ListView(props) {

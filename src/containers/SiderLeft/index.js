@@ -13,13 +13,13 @@ class SiderLeft extends React.Component {
             items: [{
                 key: "/home/manage",
                 icon: React.createElement(WindowsFilled),
-                label: "组件管理",
+                label: "cms管理",
                 children: [{
                     key: "/home/manage/table",
-                    label: "列表"
+                    label: "项目列表"
                 }, {
                     key: "404",
-                    label: "404页面"
+                    label: "权限列表"
                 },]
             }],
             selectedKeys: []
@@ -53,7 +53,7 @@ class SiderLeft extends React.Component {
             <div className={styles.siderLeft}>
                 <div className={styles.logo}>
                     <img src={logo} alt="logo" className={styles.img} />
-                    XXX系统
+                    cms系统
                 </div>
 
                 <Menu
