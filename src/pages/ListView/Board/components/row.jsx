@@ -186,8 +186,8 @@ const handleMouseLeave = (e) => {
 
   return (
     <DragDropContext onDragEnd={handleDragEnd}>
-      <a onClick={() => setHorizontal(!horizontal)}>{horizontal ? '横向' : '纵向'}</a>
-      <a onClick={()=>{
+      <a style={{marginRight:'10px',fontweight:'bold'}} onClick={() => setHorizontal(!horizontal)}>{horizontal ? '横向' : '纵向'}</a>
+      <a style={{marginRight:'10px',fontweight:'bold'}} onClick={()=>{
         setList([...list,{
           id: getUuid(),
           length: 100, 
@@ -264,7 +264,7 @@ const handleMouseLeave = (e) => {
                             }}
                           >
                             {/* <h2>{l.id}</h2> */}
-                            <div style={{position:'absolute',right:'0',top:0}} onClick={()=>{setList(list.filter(o=>o.id!==l.id))}}>删除</div>
+                            <div style={{position:'absolute',right:'4px',top:0,color: 'cadetblue'}} onClick={()=>{setList(list.filter(o=>o.id!==l.id))}}>x</div>
                             {l.content.map((item, itemIndex) => (
                               <Draggable key={item.id} draggableId={item.id} index={itemIndex} type="item">
                                 {(provided, snapshot) => (
@@ -286,12 +286,15 @@ const handleMouseLeave = (e) => {
                                     <div
                                       onDragOver={(e) => e.preventDefault()}
                                       onDrop={(e) => handleDrop(e, l.id, itemIndex)}
-                                      style={{ width: '100%', height: "100%" }} >
-                                      {!!item.type ? <View
+                                      style={{ width: '100%', height: "100%",display: 'flex',justifyContent: 'center',alignItems: 'center' }} >
+                                        <div style={{padding:'10px'}}>
+                                        {!!item.type ? <View
                                         type={item.type}
                                         name={item.key}
                                         themeType={props.themeType}
                                       /> : "请拖动元素放入内部"}
+                                          </div>
+
                                     </div>
                                   </div>
                                 )}

@@ -17,7 +17,7 @@ const Select = (props) => (
   disabled={props.disabled}
     showSearch
     placeholder="请选择" 
-    style={{ width: '100%', height: '100%' }}
+    style={{ width: '100%', }}
     optionFilterProp="children"
     onChange={onChange}
     onSearch={onSearch}

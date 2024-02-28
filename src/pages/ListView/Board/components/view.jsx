@@ -56,6 +56,7 @@ const View = (props) => {
                 ></RangePicker>,
                 "select": <Select
                 disabled={disabled}
+              
                 ></Select>,
                 "create": <Create
                 disabled={disabled}

@@ -91,7 +91,7 @@ const DragComponent = () => {
       draggable
       onDragStart={(e)=>handleDragStart(item,e)}
       onDragEnd={handleDragEnd}
-      style={{ width:'30px',opacity: isDragging ? 1 : 0.5 }}
+      style={{ marginBottom:'10px',opacity: !isDragging ? 1 : 0.5 }}
       onDragOver={(e) => {
         e.preventDefault();
     }}

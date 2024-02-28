@@ -5,6 +5,8 @@ import DragTool from './components/left'
 import DropBoard1 from './components/right'
 import DropBoard2 from './components/free'
 import DropBoard3 from './components/row'
+import TableColumns from './components/tableColumns'
+
 export default function ListView(props) {
   const boardMap = [DropBoard1, DropBoard2, DropBoard3]
   const [mode, setMode] = useState(0)
@@ -57,6 +59,11 @@ return <a style={themeType===l?{color:'red'}:{}} onClick={()=>setThemeType(l)}>
       })
     }
     </div>
+    <div className={styles.theme}>
+    <span className={styles.title}>表字段:</span>
+    <TableColumns />
+    </div>
+    
     类型:
         <DragTool />
 
