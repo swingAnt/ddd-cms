@@ -15,9 +15,11 @@ export default function ListView(props) {
 
   const DropBoard = boardMap[mode]
   return <div className={styles.Box}>
-        <div onClick={()=>{
+        <a  
+        className={styles.back}
+        onClick={()=>{
           props.onEditTable(null,null)
-        }}>返回</div>
+        }}>&lt;&lt; 返回</a>
  
  
      

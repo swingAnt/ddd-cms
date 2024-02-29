@@ -278,14 +278,14 @@ const RenderContent = (props) => {
 
         <CreateColumns updateHeader={updateHeader} />
       </div>
-      <div className={styles.addCol} onClick={() => {
+      <a className={styles.addCol} onClick={() => {
         setBody([...body, {
           id: getUuid(),
           list: []
         }])
       }}>
         添加一行
-      </div>
+      </a>
     </div>
     <div className={styles.gridTable} style={{ gridTemplateColumns: `repeat(${header?.length}, 1fr)` }}>
       {renderHeader(header)}

@@ -1,6 +1,11 @@
 .Box{
     width: 100%;
     height: 100%;
+    .back{
+        color: #1677ff;
+        font-weight: 600;
+        cursor: pointer;
+    }
     .Container{
         width: 100%;
         height: 100%;
@@ -8,6 +13,7 @@
         .left{
             width: 20%;
             height: 100%;
+            padding: 20px;
             background: rgb(162 175 185 / 35%);
             .layout{
                 display: flex;
@@ -16,17 +22,31 @@
                 .title{
                     font-weight: bold;
                 }
+                a{
+                 
+                        &:hover{
+                            color: #ff7875;
+                                                }
+                    
+                }
             }
             .theme{
                 display: flex;
                 gap: 5px;
-            
+                a{
+                 
+                    &:hover{
+                        color: #ff7875;
+                                            }
+                
+            }
                 .title{
                     font-weight: bold;
                 } 
             }
         }
         .right{
+            background: #faad140d;
             width: 80%;
             height: 100%; 
         }

@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import { Tabs,Table } from 'antd';
 import RenderContent from './RenderContent'
+import styles from './index.module.scss'
+
 const initialItems = [
   {
     label: '订单表',
@@ -69,9 +71,12 @@ const App = (props) => {
   };
   return (
     <div>
-        <div onClick={()=>{
+        <a 
+                className={styles.back}
+
+        onClick={()=>{
           props.onEditTable(null,null)
-        }}>返回</div>
+        }}>&lt;&lt; 返回</a>
     <Tabs
       type="editable-card"
       onChange={onChange}
