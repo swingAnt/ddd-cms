@@ -1,24 +1,24 @@
 import React, { useRef, useState } from 'react';
-import { Tabs,Table } from 'antd';
+import { Tabs, Table } from 'antd';
 import RenderContent from './RenderContent'
 import styles from './index.module.scss'
 
 const initialItems = [
   {
     label: '订单表',
-    list:[],
+    list: [],
 
     key: '1',
   },
   {
     label: '历史表',
-    list:[],
+    list: [],
 
     key: '2',
   },
   {
     label: '流程表',
-    list:[],
+    list: [],
 
     key: '3',
     closable: false,
@@ -71,32 +71,32 @@ const App = (props) => {
   };
   return (
     <div>
-        <a 
-                className={styles.back}
+      <a
+        className={styles.back}
 
-        onClick={()=>{
-          props.onEditTable(null,null)
+        onClick={() => {
+          props.onEditTable(null, null)
         }}>&lt;&lt; 返回</a>
-    <Tabs
-      type="editable-card"
-      onChange={onChange}
-      activeKey={activeKey}
-      onEdit={onEdit}
-      // destroyInactiveTabPane={true}
-      items={items.map((_, i) => {
-        return {
-          label: _.label,
-          key: _.key,
-          // children:activeKey===_.key&& RenderContent(_.list),
-          children:<RenderContent list={_.list}/>,
+      <Tabs
+        type="editable-card"
+        onChange={onChange}
+        activeKey={activeKey}
+        onEdit={onEdit}
+        // destroyInactiveTabPane={true}
+        items={items.map((_, i) => {
+          return {
+            label: _.label,
+            key: _.key,
+            // children:activeKey===_.key&& RenderContent(_.list),
+            children: <RenderContent list={_.list} />,
 
-        };
-      })}
-      tabPosition={'left'}
-      style={{ height: 400 }}
+          };
+        })}
+        tabPosition={'left'}
+        style={{ height: 400 }}
 
-    />
-   </div>
+      />
+    </div>
   );
 };
 export default App;
