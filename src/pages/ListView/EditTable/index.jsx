@@ -36,7 +36,7 @@ const App = (props) => {
     const newActiveKey = `newTab${newTabIndex.current++}`;
     const newPanes = [...items];
     newPanes.push({
-      label: 'New Tab',
+      label: 'New 表',
       list: [],
       key: newActiveKey,
     });

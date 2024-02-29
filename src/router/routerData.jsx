@@ -14,13 +14,13 @@ const Home = lazy(() => import('@/containers'))
 // import Home from "@/containers/index";
 
 const routerData= [
-    // {
-    //     id: "/",
-    //     path: "/",
-    //     element: <LayoutFree />,
-    //     desc: '首页布局',
-    //     authority: "",
-    // },
+    {
+        id: "/",
+        path: "/",
+        element: <ListView />,
+        desc: '首页布局',
+        authority: "",
+    },
   
     {
         id: "/home/manage/table",
