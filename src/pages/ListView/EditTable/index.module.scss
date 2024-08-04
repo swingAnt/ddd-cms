@@ -5,4 +5,17 @@
     color: #1677ff;
     font-weight: 600;
     cursor: pointer;
+    .edit{
+        margin-left: 15px;
+        cursor: pointer;
+        &:horver{
+            color: #1677ff;
+        }
+    }
+ 
+}
+:global{
+    :where(.css-dev-only-do-not-override-d2lrxs).ant-tabs .ant-tabs-tab-remove{
+        margin-left: 24px;
+    }
 }

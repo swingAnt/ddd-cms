@@ -2,12 +2,30 @@
 import React, { useState} from 'react'
 import styles from './index.module.scss'
 import { FileWordTwoTone,CheckCircleTwoTone ,FileExcelTwoTone} from '@ant-design/icons';
-import {Col } from 'antd'
+import {Col ,Dropdown} from 'antd'
 import folder from '@/assets/images/folder.png';
 
 export default function CardView(props) {
     const {span,r,key, onDelete, onEdit, onAbilityQuality, } = props;
     const [hover, onHover] = useState(false);
+    const items = [
+        {
+          key: '1',
+          label: (
+            <a target="_blank" rel="noopener noreferrer" onClick={()=>props.onEdit(r,'preview')}>
+              预览
+            </a>
+          ),
+        },
+        {
+            key: '2',
+            label: (
+              <a target="_blank" rel="noopener noreferrer" onClick={()=>props.onEdit(r,'delete')}>
+                删除
+              </a>
+            ),
+          },
+      ];
     const getImg=()=>{
         let img;
         switch(r.type){
@@ -36,16 +54,21 @@ export default function CardView(props) {
             }</div>
         </div>
         {hover&&<div className={styles.buttonGroup}>
-        <span className={styles.button}  onClick={()=>onAbilityQuality(r)} >
-            查看
-            </span>
-            <span className={styles.button} onClick={()=>props.onEdit(r,'edit')} >
+        <span className={styles.button}  onClick={()=>props.onEdit(r,'edit')} >
             编辑
             </span>
-            <span className={styles.button} onClick={()=>props.onEdit(r,'design')} >
-            设计
+            <span className={styles.button} onClick={()=>props.onEdit(r,'designClomns')} >
+            表设计
             </span>
-
+            <span className={styles.button} onClick={()=>props.onEdit(r,'design')} >
+            看板设计
+            </span>
+       
+            <Dropdown menu={{ items }} placement="bottom" arrow>
+            <span className={styles.button}  >
+            ...
+            </span>
+      </Dropdown>
         {/* <span className={styles.button}  onClick={()=>onDelete(r)}>
             删除
             </span> */}

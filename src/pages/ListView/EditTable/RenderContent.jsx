@@ -102,24 +102,24 @@ import CreateColumns from './CreateColumns'
 
 const { TextArea } = Input;
 const initHeader = [
-  {
-    lable: '姓名',
-    key: 'name',
-    type: 'textArea'
-  },
-  {
-    lable: '年龄',
-    key: 'age',
-    type: 'number'
+  // {
+  //   lable: '姓名',
+  //   key: 'name',
+  //   type: 'textArea'
+  // },
+  // {
+  //   lable: '年龄',
+  //   key: 'age',
+  //   type: 'number'
 
 
-  },
-  {
-    lable: '描述',
-    key: 'desc',
-    type: 'textArea'
+  // },
+  // {
+  //   lable: '描述',
+  //   key: 'desc',
+  //   type: 'textArea'
 
-  },
+  // },
 ]
 const initBody = [{
   id: "1",
